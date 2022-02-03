@@ -17,6 +17,7 @@ public class InitRestController {
 	public void hello() {
 		System.out.println("Hello");
 		
+		
 	}	
 	
 }
