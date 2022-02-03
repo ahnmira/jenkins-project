@@ -16,6 +16,7 @@ public class InitRestController {
 	@RequestMapping(value = "/hello", method = RequestMethod.GET)
 	public void hello() {
 		System.out.println("Hello");
+		
 	}	
 	
 }
