@@ -8,8 +8,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class InitRestController {
 	@RequestMapping(value = "/member/{memberName}", method = RequestMethod.GET)
-	public String coffeeMember(@PathVariable("memberName") String memberName) {
+	public String member(@PathVariable("memberName") String memberName) {
 		
 		return memberName;
 	}
+	
+	@RequestMapping(value = "/hello", method = RequestMethod.GET)
+	public void hello() {
+		System.out.println("Hello");
+	}	
+	
 }
